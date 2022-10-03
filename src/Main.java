@@ -42,11 +42,20 @@ public class Main {
 
 
     //Exercise 8
+        for (int c=1,vklad=0,rub=29000;c<=12;c++) {
+            vklad+=rub;
+            System.out.println("Месяц "+c+", сумма накоплений равна "+vklad+" рублей");
+        }
+        System.out.println();
 
 
-
-
-
+    //Exercise 9
+        double vklad=0;
+        for (int c=1,rub=29000;c<=12;c++) {
+            vklad=(vklad+rub)*1.01;
+            System.out.println("Месяц "+c+", сумма накоплений равна "+(int)Math.floor(vklad));
+        }
+        System.out.println();
 
     }
 }
